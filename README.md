@@ -1,8 +1,6 @@
 # Shopping Cart Exercise
 ### Candidate:
 #### Name: Tony Hawthorne
-#### Email: tony_hawthorne@hotmail.com
-#### Tel.: 07764184610
 
 ### Step 1: Shopping Cart (Initial Assumptions)
 - Assume we have received a list of items to be added to the cart along with how many of each to add.
