@@ -11,7 +11,8 @@ public class ShoppingCart {
     public void addItem(CartItem cartItem) {
         this.items.add(cartItem);
         // Update the cart's total cost immediately
-        this.totalCost = this.totalCost.add(cartItem.getTotalPrice());
+//        this.totalCost = this.totalCost.add(cartItem.getTotalPrice());
+        this.adjustTotalCost(cartItem.getTotalPrice());
         System.out.println("Added: " + cartItem.getQuantity() + " x " + cartItem.getName());
     }
 
@@ -21,6 +22,18 @@ public class ShoppingCart {
 
     public BigDecimal getTotalCost() {
         return totalCost;
+    }
+
+    public void adjustTotalCost(BigDecimal totalCost) {
+        this.totalCost = this.totalCost.add(totalCost);
+    }
+
+    public CartItem getFreeCartItem(String itemName) {
+        return this.items.stream()
+                .filter(item -> item.getName().equals(itemName))
+                .filter(item -> BigDecimal.ZERO.compareTo(item.getPrice()) == 0)
+                .findFirst()
+                .orElse(null);
     }
 
     public void checkout() {
