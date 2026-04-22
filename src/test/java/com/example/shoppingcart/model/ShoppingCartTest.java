@@ -1,4 +1,4 @@
-package com.example.shoppingcart;
+package com.example.shoppingcart.model;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
