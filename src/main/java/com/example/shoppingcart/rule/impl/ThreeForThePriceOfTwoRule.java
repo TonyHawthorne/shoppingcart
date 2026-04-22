@@ -1,4 +1,8 @@
-package com.example.shoppingcart;
+package com.example.shoppingcart.rule.impl;
+
+import com.example.shoppingcart.model.CartItem;
+import com.example.shoppingcart.model.ShoppingCart;
+import com.example.shoppingcart.rule.CartRule;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;

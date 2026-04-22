@@ -1,5 +1,9 @@
-package com.example.shoppingcart;
+package com.example.shoppingcart.service;
 
+import com.example.shoppingcart.model.CartItem;
+import com.example.shoppingcart.model.ShoppingCart;
+import com.example.shoppingcart.rule.impl.BuyOneGetOneFreeRule;
+import com.example.shoppingcart.rule.impl.ThreeForThePriceOfTwoRule;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

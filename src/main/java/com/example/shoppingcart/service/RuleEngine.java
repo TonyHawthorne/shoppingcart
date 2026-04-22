@@ -1,10 +1,13 @@
-package com.example.shoppingcart;
+package com.example.shoppingcart.service;
+
+import com.example.shoppingcart.model.ShoppingCart;
+import com.example.shoppingcart.rule.CartRule;
 
 import java.util.ArrayList;
 import java.util.List;
 
 // RuleEngine executes rules against the cart (in the order they were added)
-class RuleEngine {
+public class RuleEngine {
     private final ShoppingCart cart;
     private final List<CartRule> rules = new ArrayList<>();
 
