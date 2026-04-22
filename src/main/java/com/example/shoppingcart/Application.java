@@ -1,5 +1,11 @@
 package com.example.shoppingcart;
 
+import com.example.shoppingcart.model.CartItem;
+import com.example.shoppingcart.model.ShoppingCart;
+import com.example.shoppingcart.rule.impl.BuyOneGetOneFreeRule;
+import com.example.shoppingcart.rule.impl.ThreeForThePriceOfTwoRule;
+import com.example.shoppingcart.service.RuleEngine;
+
 import java.math.BigDecimal;
 
 public class Application {

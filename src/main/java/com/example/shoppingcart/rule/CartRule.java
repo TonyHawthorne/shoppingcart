@@ -1,4 +1,6 @@
-package com.example.shoppingcart;
+package com.example.shoppingcart.rule;
+
+import com.example.shoppingcart.model.ShoppingCart;
 
 // Strategy interface: different things which share the same behavior (apply).
 public interface CartRule {
